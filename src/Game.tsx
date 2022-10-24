@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import styled from 'styled-components';
 import { Board } from './components/board';
 import { Card } from './components/card';
+import { CardList } from './components/cart-list';
 import { WinModal, WinModalContent, WinModalTitle } from './components/win-modal';
 import { MemoryCard } from './model';
 import { generateRandom } from './utils';
@@ -10,13 +10,6 @@ export interface MemoryProps {
   size: number;
   duration: number;
 }
-
-export const CardList = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-`;
 
 function MemoryGame({ size, duration }: MemoryProps) {
 

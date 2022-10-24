@@ -13,7 +13,7 @@ root.render(
   <React.StrictMode>
     <ThemeProvider theme={defaultTheme}>
       <GlobalStyle />
-      <MemoryGame size={6} duration={3000} />
+      <MemoryGame size={16} duration={3000} />
     </ThemeProvider>
   </React.StrictMode>
 );
